@@ -1,0 +1,89 @@
+/* el diseño general layout */
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  /*   en este apartado damos bordes y tamaños a la pagina  */
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  gap: 10px;
+}
+
+/* Header le cambiamos color verde claro*/
+.header {
+  grid-area: header;
+  background-color: #00ffd5;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Main donde se encuentra los cars color fondo cambiamnos */
+.main {
+ 
+  background-color: #c3d5e9;
+  padding: 1rem;
+ /*  color del texto en main */
+  color: rgb(181, 8, 8);
+  
+}
+
+/* Aside de color morado intenso */
+.aside {
+  grid-area: aside;
+  background-color: #9a0dad;
+  padding: 1rem;
+ /*  color del texto blanco  */
+  color: rgb(231, 218, 218);
+}
+
+/* Footer en color verde */
+.footer {
+  grid-area: footer;
+  background-color: #28a745;
+  padding: 1rem;
+  text-align: center;
+ /*  color del texto blanco  */
+  color: white;
+/*   negrita al texto */
+  font-weight: bold;
+}
+
+/* Textos centrados   */
+.text-center {
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  /* cambiamos el color de fonod a la barra de navegacion */
+  background-color:rgb(127, 152, 235)
+}
+
+
+
+/* Las Galerías de fotos le damos un mejor acabado*/
+.card {
+  margin: 1rem;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
